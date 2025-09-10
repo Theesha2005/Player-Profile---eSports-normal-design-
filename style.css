@@ -1,0 +1,130 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0d0d0f;
+  color: #fff;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #111;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f1c40f;
+}
+.nav a {
+  margin-left: 20px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.nav a:hover {
+  color: #f1c40f;
+}
+
+/* HERO */
+.hero {
+  padding: 60px;
+  background: linear-gradient(to right, #111, #1a1a1d);
+}
+.player-info {
+  display: flex;
+  align-items: center;
+}
+.player-img {
+  width: 200px;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+.player-details {
+  flex: 1;
+}
+.player-name {
+  font-size: 40px;
+  font-weight: 700;
+  color: #f1c40f;
+}
+.player-role {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+.stats {
+  display: flex;
+  gap: 20px;
+}
+.stat-card {
+  background: #1c1c20;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1;
+}
+.stat-card h2 {
+  font-size: 24px;
+  color: #f1c40f;
+}
+.stat-card p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* CONTENT GRID */
+.content-grid {
+  padding: 40px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #1a1a1d;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 16px;
+}
+.card-body h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #f1c40f;
+}
+.card-body p {
+  font-size: 13px;
+  color: #bbb;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: #111;
+  color: #666;
+  font-size: 13px;
+}
